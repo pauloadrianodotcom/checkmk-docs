@@ -63,6 +63,10 @@ only switches if a timeout or other problem occurs. The same also applies after
 a switchover -- the connection will only revert to the actually configured
 server if the failover server becomes unavailable.
 
+When connecting to big environments you can have a scenario where the users are located in a specific domain while the groups are hosted in another, to properly query that you need to refeer to a global catalog server and change the connection port to 3268 or 3269 (SSL). 
+
+
+
 
 [#user_filter]
 === Defining users
